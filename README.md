@@ -5,11 +5,13 @@ machine instruction on modern IA-32 processors.  This instruction can
 be used to read the number of cycles since processor startup and gives
 very accurate timing information.
 
----------------------------------------------------------------------------
+----
+
 Note: this package contains the file cycle.h by Matteo Frigo, which
 provides access to cycle counters on several architectures.  The
 license for this file is included in the file LICENSE in this package.
-----------------------------------------------------------------------------
+
+----
 
 ## Usage
 
@@ -28,7 +30,7 @@ for building and installing in a sandbox.
 
 Just import module "System.CPUTime.Rdtsc" into your Haskell file and use
 
-  ghc --make FILENAME
+    ghc --make FILENAME
 
 to compile your program.
 
